@@ -1,0 +1,90 @@
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body[theme = 'dark']{
+    color : white;
+    background-color: rgb(112, 108, 108);
+}
+body[theme = 'dark'] #navbar{
+    background-color: black;
+    border: 1px solid white;
+}
+body[theme = 'dark'] .songCard, body[theme = 'dark'] .allSongs, body[theme = 'dark'] .playList{
+    background-color: rgb(182, 178, 178);
+    border: 1px solid white;
+}
+body[theme = 'dark'] button{
+    background-color: black;
+    border: 2px solid white;
+}
+body[theme = 'dark'] #allSongs div,
+body[theme = 'dark'] .currentPlaylist div,
+body[theme = 'dark'] .allPlaylist div,
+body[theme = 'dark'] #songCard{
+    background-color: black;
+}
+#navbar{ 
+    background-color:  #e3f2fd;
+    position: fixed;
+    width: 100%;
+    padding: 0 1% 1% 1%;
+    border: 1px solid cornflowerblue;
+}
+main{
+    margin: 2%;
+    display: flex;
+    position: absolute;
+    top: 5%;
+    width: 95%;
+    justify-content: space-between;
+}
+.songCard, .allSongs, .playList{
+    background-color:lightskyblue ;
+    margin: 2%;
+    padding: 2% 2% 0 2%;
+    width: 30%;
+    object-fit: contain;
+    border: 2px solid cornflowerblue;
+}
+#allSongs div,
+.currentPlaylist div,
+.allPlaylist div{
+    background-color: #123eb8;
+    margin : 5px;
+    padding : 5px;
+    border-radius: 10px;
+    color: white;
+}
+.allSongs h3, .playlist h3{
+    margin-top: 5%;
+}
+#songCard img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 5%;
+}
+#songControls audio{
+    width: 100%;
+    margin: 5% 0;
+}
+.controlBtns{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20%;
+    width: 50%;
+    align-items: center;
+}
+#addPlaylist{
+    margin: 5% 10% 2% 10%;
+    width: 70%;
+}
+
+#songCard{
+    background-color: #123eb8;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    color: white;
+
+}

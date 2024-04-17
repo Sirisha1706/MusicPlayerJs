@@ -3,22 +3,22 @@ const musicData = [
       name: 'Poolamme Pilla',
       artist: 'Gowra Hari',
       image: 'images/poolamme_pilla.jpg',
-      genre: 'Fock',
+      genre: 'Folk',
       source: 'audio/Poolamme_pilla.mp3'
     },
     { id:2, 
       name: 'Ammaadi',
       artist: 'kaala Bhairava',
       image: 'images/ammaadi.jpg',
-      genre: 'Pop',
+      genre: 'Pop Music',
       source: 'audio/Ammaadi.mp3'
     },
     { id:3, 
-      name: 'Inthandham',
-      artist: 'SPB Charan',
-      image: 'images/inthandham.jpg',
-      genre: 'Pop',
-      source: 'audio/Inthandham.mp3'
+      name: 'Kalaganti Kalaganti',
+      artist: 'SP Balu',
+      image: 'images/Kalaganti_Kalaganti.jpg',
+      genre: 'Classical',
+      source: 'audio/Kalaganti Kalaganti.mp3'
     },
     { id:4, 
       name: 'Ammadu Lets do kummudu',
@@ -49,8 +49,7 @@ const createBtn = document.getElementById('create');
 
 
 
-
-musicData.forEach(music => {
+musicData.forEach((music) => {
     let list = [];
     document.querySelectorAll('.genreFilter option').forEach(opt =>list.push(opt.textContent));
     if(!list.includes(music.genre)){
